@@ -73,6 +73,12 @@ class Database
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function rowCount()
+    {
+        // row count ini method milik PDO
+        return $this->stmt->rowCount();
+    }
+
 
 
 }
